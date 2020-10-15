@@ -1,8 +1,10 @@
 body {
-	color				: transparent;
+	color				: ;
 	background-color	: #a10016;
 	background-image	: url("https://wallpapercave.com/wp/wp5265441.jpg");
 	background-position	: center;
+	background-size     : cover;
+	background-repeat	: no-repeat;
 	font-family			: Georgia, Times, serif;
     line-height			: 1.4em;
     text-align 			: center;
@@ -79,3 +81,13 @@ body {
 	color				:white;
 	position			: relative;
 }
+
+table,tr,td{
+    background-color: rgb(255, 0, 0) ;
+    font-family: Verdana;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+   }
+ 
