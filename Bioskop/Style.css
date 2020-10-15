@@ -81,6 +81,7 @@ body {
 	color				:white;
 	position			: relative;
 }
+<<<<<<< HEAD
 
 table,tr,td{
     background-color: rgb(255, 0, 0) ;
@@ -91,3 +92,5 @@ table,tr,td{
     border-collapse: collapse;
    }
  
+=======
+>>>>>>> 1dedd9abaf57b3343e68e2c9167efb6129c2373f
