@@ -6,7 +6,8 @@ body {
 /*social */
 .card-one {
     position: relative;
-	left: 17%;
+    left: 17%;
+    bottom: 5   px;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -15,7 +16,7 @@ body {
 .card-two {
     position: relative;
 	left: 41%;
-	bottom: 390px;
+	bottom: 380px;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -24,7 +25,7 @@ body {
 .card-three {
     position: relative;
 	left: 65%;
-	bottom: 780px;
+    bottom: 753px;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -42,7 +43,7 @@ body {
 .card-five {
     position: relative;
 	left: 53%;
-	bottom: 1140px;
+	bottom: 1123px;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
