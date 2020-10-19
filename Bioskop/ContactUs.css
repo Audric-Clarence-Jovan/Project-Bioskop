@@ -7,7 +7,7 @@ body {
 .card-one {
     position: relative;
     left: 17%;
-    bottom: 5   px;
+    bottom: auto;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -16,7 +16,7 @@ body {
 .card-two {
     position: relative;
 	left: 41%;
-	bottom: 380px;
+	bottom: auto;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -25,7 +25,7 @@ body {
 .card-three {
     position: relative;
 	left: 65%;
-    bottom: 753px;
+    bottom: auto;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -34,7 +34,7 @@ body {
 .card-four {
     position: relative;
 	left: 29%;
-	bottom: 750px;
+	bottom: auto;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
@@ -43,7 +43,7 @@ body {
 .card-five {
     position: relative;
 	left: 53%;
-	bottom: 1123px;
+	bottom: auto;
     width: 300px;
     background: #fff;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
