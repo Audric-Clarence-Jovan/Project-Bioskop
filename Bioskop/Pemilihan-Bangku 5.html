@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Studio Cresent</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+.button {
+  padding: 7px 7px;
+  text-align: justify;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Studio Cresent</h2>
+  <br>
+  <style>
+    body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #DAD9DE;
+}
+ .box-button {
+    border: 5px solid #0988A9;
+    border-radius: 50px;
+}
+.box-button button {
+    background-color: #DAD9DE;
+    color: #3A3A3C;
+    border: none;
+    margin: 0;
+    padding: 1em 2em;
+    font-weight: bold;
+    outline: none;
+    font-size: 1.5em;
+}
+.box-button button:nth-child(1) {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.box-button button:nth-child(3) {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+ .box-button button:hover {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+ .active {
+    background-color: #0988A9 !important;
+    color: #DAD9DE !important;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+      $(document).ready(function(){
+            $('.box-button').on('click', 'button', function() {
+              $(this).addClass('active').siblings().removeClass('active');
+          });
+      });
+  </script>
+  <button type="button" class="active">A01</button>
+  <button type="button" class="active">A02</button>
+  <button type="button" class="active">A03</button>
+  <button type="button" class="active">A04</button>
+  <button type="button" class="active">A05</button>
+  <button type="button" class="active" style="margin-left:60px">A06</button>
+  <button type="button" class="active">A07</button>
+  <button type="button" class="active">A08</button>
+  <button type="button" class="active">A09</button>
+  <button type="button" class="active">A10</button>
+  <button type="button" class="active">A11</button>
+  <button type="button" class="active">A12</button> 
+  <button type="button" class="active">A13</button>
+  <button type="button" class="active">A14</button>
+  <button type="button" class="active">A15</button>
+  <button type="button" class="active" style="margin-left:78px">A16</button>
+  <button type="button" class="active">A17</button> 
+  <button type="button" class="active">A18</button>
+  <button type="button" class="active">A19</button>
+  <button type="button" class="active">A20</button>
+  <br><br>
+  <button type="button" class="active">B01</button>
+  <button type="button" class="active">B02</button>
+  <button type="button" class="active">B03</button>
+  <button type="button" class="active">B04</button>
+  <button type="button" class="active">B05</button>
+  <button type="button" class="active" style="margin-left:72px">B06</button>
+  <button type="button" class="active">B07</button>
+  <button type="button" class="active">B08</button>
+  <button type="button" class="active">B09</button>
+  <button type="button" class="active">B10</button>
+  <button type="button" class="active">B11</button>
+  <button type="button" class="active">B12</button> 
+  <button type="button" class="active">B13</button>
+  <button type="button" class="active">B14</button>
+  <button type="button" class="active">B15</button>
+  <button type="button" class="active" style="margin-left:89px">B16</button>
+  <button type="button" class="active">B17</button> 
+  <button type="button" class="active">B18</button>
+  <button type="button" class="active">B19</button>
+  <button type="button" class="active">B20</button>
+  <br><br>
+  <button type="button" class="active">C01</button>
+  <button type="button" class="active">C02</button>
+  <button type="button" class="active">C03</button>
+  <button type="button" class="active">C04</button>
+  <button type="button" class="active">C05</button>
+  <button type="button" class="active" style="margin-left:65px">C06</button>
+  <button type="button" class="active">C07</button>
+  <button type="button" class="active">C08</button>
+  <button type="button" class="active">C09</button>
+  <button type="button" class="active">C10</button>
+  <button type="button" class="active">C11</button>
+  <button type="button" class="active">C12</button> 
+  <button type="button" class="active">C13</button>
+  <button type="button" class="active">C14</button>
+  <button type="button" class="active">C15</button>
+  <button type="button" class="active" style="margin-left:82px">C16</button>
+  <button type="button" class="active">C17</button> 
+  <button type="button" class="active">C18</button>
+  <button type="button" class="active">C19</button>
+  <button type="button" class="active">C20</button>
+  <br><br>
+  <button type="button" class="active">D01</button>
+  <button type="button" class="active">D02</button>
+  <button type="button" class="active">D03</button>
+  <button type="button" class="active">D04</button>
+  <button type="button" class="active">D05</button>
+  <button type="button" class="active" style="margin-left:53px">D06</button>
+  <button type="button" class="active">D07</button>
+  <button type="button" class="active">D08</button>
+  <button type="button" class="active">D09</button>
+  <button type="button" class="active">D10</button>
+  <button type="button" class="active">D11</button>
+  <button type="button" class="active">D12</button> 
+  <button type="button" class="active">D13</button>
+  <button type="button" class="active">D14</button>
+  <button type="button" class="active">D15</button>
+  <button type="button" class="active" style="margin-left:68px">D16</button>
+  <button type="button" class="active">D17</button> 
+  <button type="button" class="active">D18</button>
+  <button type="button" class="active">D19</button>
+  <button type="button" class="active">D20</button>
+  <br><br>
+  <button type="button" class="active">E01</button>
+  <button type="button" class="active">E02</button>
+  <button type="button" class="active">E03</button>
+  <button type="button" class="active">E04</button>
+  <button type="button" class="active">E05</button>
+  <button type="button" class="active" style="margin-left:85px">E06</button>
+  <button type="button" class="active">E07</button>
+  <button type="button" class="active">E08</button>
+  <button type="button" class="active">E09</button>
+  <button type="button" class="active">E10</button>
+  <button type="button" class="active">E11</button>
+  <button type="button" class="active">E12</button> 
+  <button type="button" class="active">E13</button>
+  <button type="button" class="active">E14</button>
+  <button type="button" class="active">E15</button>
+  <button type="button" class="active" style="margin-left:99px">E16</button>
+  <button type="button" class="active">E17</button> 
+  <button type="button" class="active">E18</button>
+  <button type="button" class="active">E19</button>
+  <button type="button" class="active">E20</button>
+  <br><br>
+  <button type="button" class="active">F01</button>
+  <button type="button" class="active">F02</button>
+  <button type="button" class="active">F03</button>
+  <button type="button" class="active">F04</button>
+  <button type="button" class="active">F05</button>
+  <button type="button" class="active" style="margin-left:88px">F06</button>
+  <button type="button" class="active">F07</button>
+  <button type="button" class="active">F08</button>
+  <button type="button" class="active">F09</button>
+  <button type="button" class="active">F10</button>
+  <button type="button" class="active">F11</button>
+  <button type="button" class="active">F12</button> 
+  <button type="button" class="active">F13</button>
+  <button type="button" class="active">F14</button>
+  <button type="button" class="active">F15</button>
+  <button type="button" class="active" style="margin-left:102px">F16</button>
+  <button type="button" class="active">F17</button> 
+  <button type="button" class="active">F18</button>
+  <button type="button" class="active">F19</button>
+  <button type="button" class="active">F20</button>
+  <br><br>
+  <button type="button" class="active">G01</button>
+  <button type="button" class="active">G02</button>
+  <button type="button" class="active">G03</button>
+  <button type="button" class="active">G04</button>
+  <button type="button" class="active">G05</button>
+  <button type="button" class="active" style="margin-left:59px">G06</button>
+  <button type="button" class="active">G07</button>
+  <button type="button" class="active">G08</button>
+  <button type="button" class="active">G09</button>
+  <button type="button" class="active">G10</button>
+  <button type="button" class="active">G11</button>
+  <button type="button" class="active">G12</button> 
+  <button type="button" class="active">G13</button>
+  <button type="button" class="active">G14</button>
+  <button type="button" class="active">G15</button>
+  <button type="button" class="active" style="margin-left:68px">G16</button>
+  <button type="button" class="active">G17</button> 
+  <button type="button" class="active">G18</button>
+  <button type="button" class="active">G19</button>
+  <button type="button" class="active">G20</button>
+  <br><br>
+  <button type="button" class="active">H01</button>
+  <button type="button" class="active">H02</button>
+  <button type="button" class="active">H03</button>
+  <button type="button" class="active">H04</button>
+  <button type="button" class="active">H05</button>
+  <button type="button" class="active" style="margin-left:55px">H06</button>
+  <button type="button" class="active">H07</button>
+  <button type="button" class="active">H08</button>
+  <button type="button" class="active">H09</button>
+  <button type="button" class="active">H10</button>
+  <button type="button" class="active">H11</button>
+  <button type="button" class="active">H12</button> 
+  <button type="button" class="active">H13</button>
+  <button type="button" class="active">H14</button>
+  <button type="button" class="active">H15</button>
+  <button type="button" class="active" style="margin-left:66px">H16</button>
+  <button type="button" class="active">H17</button> 
+  <button type="button" class="active">H18</button>
+  <button type="button" class="active">H19</button>
+  <button type="button" class="active">H20</button>
+  <br><br>
+  <button type="button" class="active">I01</button>
+  <button type="button" class="active">I02</button>
+  <button type="button" class="active">I03</button>
+  <button type="button" class="active">I04</button>
+  <button type="button" class="active">I05</button>
+  <button type="button" class="active" style="margin-left:127px">I06</button>
+  <button type="button" class="active">I07</button>
+  <button type="button" class="active">I08</button>
+  <button type="button" class="active">I09</button>
+  <button type="button" class="active">I10</button>
+  <button type="button" class="active">I11</button>
+  <button type="button" class="active">I12</button> 
+  <button type="button" class="active">I13</button>
+  <button type="button" class="active">I14</button>
+  <button type="button" class="active">I15</button>
+  <button type="button" class="active" style="margin-left:140px">I16</button>
+  <button type="button" class="active">I17</button> 
+  <button type="button" class="active">I18</button>
+  <button type="button" class="active">I19</button>
+  <button type="button" class="active">I20</button>
+  <br><br>
+  <button type="button" class="active">J01</button>
+  <button type="button" class="active">J02</button>
+  <button type="button" class="active">J03</button>
+  <button type="button" class="active">J04</button>
+  <button type="button" class="active">J05</button>
+  <button type="button" class="active" style="margin-left:113px">J06</button>
+  <button type="button" class="active">J07</button>
+  <button type="button" class="active">J08</button>
+  <button type="button" class="active">J09</button>
+  <button type="button" class="active">J10</button>
+  <button type="button" class="active">J11</button>
+  <button type="button" class="active">J12</button> 
+  <button type="button" class="active">J13</button>
+  <button type="button" class="active">J14</button>
+  <button type="button" class="active">J15</button>
+  <button type="button" class="active" style="margin-left:130px">J16</button>
+  <button type="button" class="active">J17</button> 
+  <button type="button" class="active">J18</button>
+  <button type="button" class="active">J19</button>
+  <button type="button" class="active">J20</button>
+  <br><br>
+  <button type="button" class="active">K01</button>
+  <button type="button" class="active">K02</button>
+  <button type="button" class="active">K03</button>
+  <button type="button" class="active">K04</button>
+  <button type="button" class="active">K05</button>
+  <button type="button" class="active" style="margin-left:75px">K06</button>
+  <button type="button" class="active">K07</button>
+  <button type="button" class="active">K08</button>
+  <button type="button" class="active">K09</button>
+  <button type="button" class="active">K10</button>
+  <button type="button" class="active">K11</button>
+  <button type="button" class="active">K12</button> 
+  <button type="button" class="active">K13</button>
+  <button type="button" class="active">K14</button>
+  <button type="button" class="active">K15</button>
+  <button type="button" class="active" style="margin-left:100px">K16</button>
+  <button type="button" class="active">K17</button> 
+  <button type="button" class="active">K18</button>
+  <button type="button" class="active">K19</button>
+  <button type="button" class="active">K20</button>
+  <br><br>
+  <div class="jumbotron">
+    <h1 align="center">SCREEN</h1>      
+  </div>
+  <a href="kode-booking.html"><button type="button" class="btn btn-primary button" style="margin-left:470px">Lanjutkan Pembayaran</button></a>
+</div>
+
+</body>
+</html>
