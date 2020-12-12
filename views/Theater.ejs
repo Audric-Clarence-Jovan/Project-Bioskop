@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+  <title>Apex Theater</title>
+  <link rel="stylesheet" href="Style.css" />
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="layout">
+    <div id="header">
+      <img src="Movie_Ticket.jpg" width="700px" height="250px" class="header">
+    </div>
+
+    <div id="menu">
+      <center>
+        <ul>
+          <li><a href="Home"><b>Home</b></a></li>
+          <li><a href="NowPlaying"><b>Now Playing</b></a></li>
+          <li><a href="UpComing"><b>Up Coming</b></a></li>
+          <li><a href="Theater"><b>Theater</b></a></li>
+          <li><a href="ContactUs"><b>Contact Us</b></a></li>
+          <li><a href="logout"><b>Logout</b></a></li>
+        </ul>
+      </center>
+    </div>
+
+    <div id="runningtext">
+      <marquee behavior="scroll" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();"
+        direction="left">
+        <b>Theater View</b>
+      </marquee>
+    </div>
+    <br>
+    <br>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="MoviePosters/Interior 1.jpg" alt="interior1" style="width:1100; height:500">
+        </div>
+        <div class="carousel-item">
+          <img src="MoviePosters/Interior 2.jpg" alt="interior2" style="width:1100; height:500">
+        </div>
+        <div class="carousel-item">
+          <img src="MoviePosters/Interior 3.jpg" alt="interior3" style="width:1100; height:500">
+        </div>
+        <div class="carousel-item">
+          <img src="MoviePosters/Interior 4.jpg" alt="interior4" style="width:1100; height:500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="jumbotron" style="background-color:rgb(121, 99, 103);text-color">
+      <h1 style="text-align: left;" class="text-white">Mall Mangga Dua Square Lantai 4</h1>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Jalan Gunung Sahari Raya No.1,Ancol</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Pademangan,Jakarta Utara</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Phone: (021)893429</p>
+      <br>
+      <br>
+      <h1 style="text-align: left;" class="text-white">Sunter Mall</h1>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Jl. Danau Sunter Utara No.Kav.II, RT.14/RW.13,
+        Sunter Agung,</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Tj. Priok, Kota Jkt Utara,</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Phone: (021)987647</p>
+      <br>
+      <br>
+      <h1 style="text-align: left;" class="text-white">Ayani Megamall</h1>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Jl. Jenderal Ahmad Yani No.4, Parit Tokaya,</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Kec. Pontianak Sel., Kota Pontianak, Kalimantan
+        Barat</p>
+      <p style="font-size: 18px; text-align: left;" class="text-white">Phone: (0561)754831</p>
+    </div>
+</body>
+
+</html>

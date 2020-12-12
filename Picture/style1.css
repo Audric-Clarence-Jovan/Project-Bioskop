@@ -1,0 +1,21 @@
+body {
+	color				: ;
+	background-color	: #a10016;
+	background-image	: url("https://wallpapercave.com/wp/wp5265441.jpg");
+	background-position	: center;
+	background-size     : cover;
+	background-repeat	: no-repeat;
+	font-family			: Georgia, Times, serif;
+    line-height			: 1.4em;
+    text-align 			: center;
+    font-size 			: 12px;
+    margin				: 0px;
+}
+
+#layout{
+	background			: transparent;
+	width 				: ; /*1400px*/
+	margin				: auto;
+	text-align 			: center;
+	padding 			: 0px;
+	opacity				: 100.0 ;

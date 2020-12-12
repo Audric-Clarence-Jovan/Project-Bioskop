@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Now Playing Movies</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <div id="layout">
+        <div id="header">
+            <img src="Movie_Ticket.jpg" width="100px" height="250px" class="header">
+        </div>
+
+        <div id="menu">
+            <center>
+                <ul>
+                    <li><a href="Home"><b>Home</b></a></li>
+                    <li><a href="NowPlaying"><b>Now Playing</b></a></li>
+                    <li><a href="UpComing"><b>Up Coming</b></a></li>
+                    <li><a href="Theater"><b>Theater</b></a></li>
+                    <li><a href="ContactUs"><b>Contact Us</b></a></li>
+                    <li><a href="logout"><b>Logout</b></a></li>
+                </ul>
+            </center>
+        </div>
+
+        <div id="runningtext">
+            <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();"
+                direction="left">
+                <b>Now Playing Movies</b>
+            </marquee>
+        </div>
+
+        <div>
+            <a href="/Synopsis1"><img src="MoviePosters/Ready Player One.jpg" alt="RPO" class="movie"></a>
+            <a href="/Synopsis2"><img src="MoviePosters/Peninsula.jpg" alt="Peninsula" class="movie"></a>
+            <a href="/Synopsis3"><img src="MoviePosters/Wreck-it Ralph 2.jpg" alt="WIR2" class="movie"></a>
+            <a href="/Synopsis4"><img src="MoviePosters/Mission Impossible FallOut.jpg" alt="MIF" class="movie"></a>
+            <a href="/Synopsis5"><img src="MoviePosters/Avengers EndGame.jpg" alt="EndGame" class="movie"></a>
+        </div>
+        <div id="footer"> @COPYRIGHT 2020. Apex Ticket ALL RIGHTS RESERVED.</div>
+    </div>
+</body>
+
+</html>

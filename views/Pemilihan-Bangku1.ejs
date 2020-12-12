@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Studio Apex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .button {
+      padding: 7px 7px;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background-color: #DAD9DE;
+    }
+
+    .box-button {
+      border: 5px solid #0988A9;
+      border-radius: 50px;
+    }
+
+    .box-button button {
+      background-color: #DAD9DE;
+      color: #3A3A3C;
+      border: none;
+      margin: 0;
+      padding: 1em 2em;
+      font-weight: bold;
+      outline: none;
+      font-size: 1.5em;
+    }
+
+    .box-button button:nth-child(1) {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    .box-button button:nth-child(3) {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    .box-button button:hover {
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+
+    .active {
+      background-color: #0988A9 !important;
+      color: #DAD9DE !important;
+    }
+
+    .haha {
+      background-color: brown !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.box-button').on('click', 'button', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      });
+      function change(bangku) {
+        console.log(this);
+      }
+      var x = 0
+      $('.seat').click(function (e) {
+        const button = e.target;
+        if (button.classList.contains('haha')) {
+          button.classList.remove('haha')
+          x -= 1
+        } else {
+          if (x <  <%= qt %>){
+        button.classList.add('haha')
+        x += 1
+      }
+    }
+        if (x == <%= qt %>) {
+      document.getElementById('hihi').disabled = false
+    }else {
+      document.getElementById('hihi').disabled = true
+    }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Studio Apex</h2>
+    <br>
+    <button type="button" class="active seat">A01</button>
+    <button type="button" class="active seat">A02</button>
+    <button type="button" class="active seat">A03</button>
+    <button type="button" class="active seat">A04</button>
+    <button type="button" class="active seat">A05</button>
+    <button type="button" class="active seat" style="margin-left:60px">A06</button>
+    <button type="button" class="active seat">A07</button>
+    <button type="button" class="active seat">A08</button>
+    <button type="button" class="active seat">A09</button>
+    <button type="button" class="active seat">A10</button>
+    <button type="button" class="active seat">A11</button>
+    <button type="button" class="active seat">A12</button>
+    <button type="button" class="active seat">A13</button>
+    <button type="button" class="active seat">A14</button>
+    <button type="button" class="active seat">A15</button>
+    <button type="button" class="active seat" style="margin-left:78px">A16</button>
+    <button type="button" class="active seat">A17</button>
+    <button type="button" class="active seat">A18</button>
+    <button type="button" class="active seat">A19</button>
+    <button type="button" class="active seat">A20</button>
+    <br><br>
+    <button type="button" class="active seat">B01</button>
+    <button type="button" class="active seat">B02</button>
+    <button type="button" class="active seat">B03</button>
+    <button type="button" class="active seat">B04</button>
+    <button type="button" class="active seat">B05</button>
+    <button type="button" class="active seat" style="margin-left:72px">B06</button>
+    <button type="button" class="active seat">B07</button>
+    <button type="button" class="active seat">B08</button>
+    <button type="button" class="active seat">B09</button>
+    <button type="button" class="active seat">B10</button>
+    <button type="button" class="active seat">B11</button>
+    <button type="button" class="active seat">B12</button>
+    <button type="button" class="active seat">B13</button>
+    <button type="button" class="active seat">B14</button>
+    <button type="button" class="active seat">B15</button>
+    <button type="button" class="active seat" style="margin-left:89px">B16</button>
+    <button type="button" class="active seat">B17</button>
+    <button type="button" class="active seat">B18</button>
+    <button type="button" class="active seat">B19</button>
+    <button type="button" class="active seat">B20</button>
+    <br><br>
+    <button type="button" class="active seat">C01</button>
+    <button type="button" class="active seat">C02</button>
+    <button type="button" class="active seat">C03</button>
+    <button type="button" class="active seat">C04</button>
+    <button type="button" class="active seat">C05</button>
+    <button type="button" class="active seat" style="margin-left:65px">C06</button>
+    <button type="button" class="active seat">C07</button>
+    <button type="button" class="active seat">C08</button>
+    <button type="button" class="active seat">C09</button>
+    <button type="button" class="active seat">C10</button>
+    <button type="button" class="active seat">C11</button>
+    <button type="button" class="active seat">C12</button>
+    <button type="button" class="active seat">C13</button>
+    <button type="button" class="active seat">C14</button>
+    <button type="button" class="active seat">C15</button>
+    <button type="button" class="active seat" style="margin-left:82px">C16</button>
+    <button type="button" class="active seat">C17</button>
+    <button type="button" class="active seat">C18</button>
+    <button type="button" class="active seat">C19</button>
+    <button type="button" class="active seat">C20</button>
+    <br><br>
+    <button type="button" class="active seat">D01</button>
+    <button type="button" class="active seat">D02</button>
+    <button type="button" class="active seat">D03</button>
+    <button type="button" class="active seat">D04</button>
+    <button type="button" class="active seat">D05</button>
+    <button type="button" class="active seat" style="margin-left:53px">D06</button>
+    <button type="button" class="active seat">D07</button>
+    <button type="button" class="active seat">D08</button>
+    <button type="button" class="active seat">D09</button>
+    <button type="button" class="active seat">D10</button>
+    <button type="button" class="active seat">D11</button>
+    <button type="button" class="active seat">D12</button>
+    <button type="button" class="active seat">D13</button>
+    <button type="button" class="active seat">D14</button>
+    <button type="button" class="active seat">D15</button>
+    <button type="button" class="active seat" style="margin-left:68px">D16</button>
+    <button type="button" class="active seat">D17</button>
+    <button type="button" class="active seat">D18</button>
+    <button type="button" class="active seat">D19</button>
+    <button type="button" class="active seat">D20</button>
+    <br><br>
+    <button type="button" class="active seat">E01</button>
+    <button type="button" class="active seat">E02</button>
+    <button type="button" class="active seat">E03</button>
+    <button type="button" class="active seat">E04</button>
+    <button type="button" class="active seat">E05</button>
+    <button type="button" class="active seat" style="margin-left:85px">E06</button>
+    <button type="button" class="active seat">E07</button>
+    <button type="button" class="active seat">E08</button>
+    <button type="button" class="active seat">E09</button>
+    <button type="button" class="active seat">E10</button>
+    <button type="button" class="active seat">E11</button>
+    <button type="button" class="active seat">E12</button>
+    <button type="button" class="active seat">E13</button>
+    <button type="button" class="active seat">E14</button>
+    <button type="button" class="active seat">E15</button>
+    <button type="button" class="active seat" style="margin-left:99px">E16</button>
+    <button type="button" class="active seat">E17</button>
+    <button type="button" class="active seat">E18</button>
+    <button type="button" class="active seat">E19</button>
+    <button type="button" class="active seat">E20</button>
+    <br><br>
+    <button type="button" class="active seat">F01</button>
+    <button type="button" class="active seat">F02</button>
+    <button type="button" class="active seat">F03</button>
+    <button type="button" class="active seat">F04</button>
+    <button type="button" class="active seat">F05</button>
+    <button type="button" class="active seat" style="margin-left:88px">F06</button>
+    <button type="button" class="active seat">F07</button>
+    <button type="button" class="active seat">F08</button>
+    <button type="button" class="active seat">F09</button>
+    <button type="button" class="active seat">F10</button>
+    <button type="button" class="active seat">F11</button>
+    <button type="button" class="active seat">F12</button>
+    <button type="button" class="active seat">F13</button>
+    <button type="button" class="active seat">F14</button>
+    <button type="button" class="active seat">F15</button>
+    <button type="button" class="active seat" style="margin-left:102px">F16</button>
+    <button type="button" class="active seat">F17</button>
+    <button type="button" class="active seat">F18</button>
+    <button type="button" class="active seat">F19</button>
+    <button type="button" class="active seat">F20</button>
+    <br><br>
+    <button type="button" class="active seat">G01</button>
+    <button type="button" class="active seat">G02</button>
+    <button type="button" class="active seat">G03</button>
+    <button type="button" class="active seat">G04</button>
+    <button type="button" class="active seat">G05</button>
+    <button type="button" class="active seat" style="margin-left:59px">G06</button>
+    <button type="button" class="active seat">G07</button>
+    <button type="button" class="active seat">G08</button>
+    <button type="button" class="active seat">G09</button>
+    <button type="button" class="active seat">G10</button>
+    <button type="button" class="active seat">G11</button>
+    <button type="button" class="active seat">G12</button>
+    <button type="button" class="active seat">G13</button>
+    <button type="button" class="active seat">G14</button>
+    <button type="button" class="active seat">G15</button>
+    <button type="button" class="active seat" style="margin-left:68px">G16</button>
+    <button type="button" class="active seat">G17</button>
+    <button type="button" class="active seat">G18</button>
+    <button type="button" class="active seat">G19</button>
+    <button type="button" class="active seat">G20</button>
+    <br><br>
+    <button type="button" class="active seat">H01</button>
+    <button type="button" class="active seat">H02</button>
+    <button type="button" class="active seat">H03</button>
+    <button type="button" class="active seat">H04</button>
+    <button type="button" class="active seat">H05</button>
+    <button type="button" class="active seat" style="margin-left:55px">H06</button>
+    <button type="button" class="active seat">H07</button>
+    <button type="button" class="active seat">H08</button>
+    <button type="button" class="active seat">H09</button>
+    <button type="button" class="active seat">H10</button>
+    <button type="button" class="active seat">H11</button>
+    <button type="button" class="active seat">H12</button>
+    <button type="button" class="active seat">H13</button>
+    <button type="button" class="active seat">H14</button>
+    <button type="button" class="active seat">H15</button>
+    <button type="button" class="active seat" style="margin-left:66px">H16</button>
+    <button type="button" class="active seat">H17</button>
+    <button type="button" class="active seat">H18</button>
+    <button type="button" class="active seat">H19</button>
+    <button type="button" class="active seat">H20</button>
+    <br><br>
+    <button type="button" class="active seat">I01</button>
+    <button type="button" class="active seat">I02</button>
+    <button type="button" class="active seat">I03</button>
+    <button type="button" class="active seat">I04</button>
+    <button type="button" class="active seat">I05</button>
+    <button type="button" class="active seat" style="margin-left:127px">I06</button>
+    <button type="button" class="active seat">I07</button>
+    <button type="button" class="active seat">I08</button>
+    <button type="button" class="active seat">I09</button>
+    <button type="button" class="active seat">I10</button>
+    <button type="button" class="active seat">I11</button>
+    <button type="button" class="active seat">I12</button>
+    <button type="button" class="active seat">I13</button>
+    <button type="button" class="active seat">I14</button>
+    <button type="button" class="active seat">I15</button>
+    <button type="button" class="active seat" style="margin-left:140px">I16</button>
+    <button type="button" class="active seat">I17</button>
+    <button type="button" class="active seat">I18</button>
+    <button type="button" class="active seat">I19</button>
+    <button type="button" class="active seat">I20</button>
+    <br><br>
+    <button type="button" class="active seat">J01</button>
+    <button type="button" class="active seat">J02</button>
+    <button type="button" class="active seat">J03</button>
+    <button type="button" class="active seat">J04</button>
+    <button type="button" class="active seat">J05</button>
+    <button type="button" class="active seat" style="margin-left:113px">J06</button>
+    <button type="button" class="active seat">J07</button>
+    <button type="button" class="active seat">J08</button>
+    <button type="button" class="active seat">J09</button>
+    <button type="button" class="active seat">J10</button>
+    <button type="button" class="active seat">J11</button>
+    <button type="button" class="active seat">J12</button>
+    <button type="button" class="active seat">J13</button>
+    <button type="button" class="active seat">J14</button>
+    <button type="button" class="active seat">J15</button>
+    <button type="button" class="active seat" style="margin-left:130px">J16</button>
+    <button type="button" class="active seat">J17</button>
+    <button type="button" class="active seat">J18</button>
+    <button type="button" class="active seat">J19</button>
+    <button type="button" class="active seat">J20</button>
+    <br><br>
+    <button type="button" class="active seat">K01</button>
+    <button type="button" class="active seat">K02</button>
+    <button type="button" class="active seat">K03</button>
+    <button type="button" class="active seat">K04</button>
+    <button type="button" class="active seat">K05</button>
+    <button type="button" class="active seat" style="margin-left:75px">K06</button>
+    <button type="button" class="active seat">K07</button>
+    <button type="button" class="active seat">K08</button>
+    <button type="button" class="active seat">K09</button>
+    <button type="button" class="active seat">K10</button>
+    <button type="button" class="active seat">K11</button>
+    <button type="button" class="active seat">K12</button>
+    <button type="button" class="active seat">K13</button>
+    <button type="button" class="active seat">K14</button>
+    <button type="button" class="active seat">K15</button>
+    <button type="button" class="active seat" style="margin-left:100px">K16</button>
+    <button type="button" class="active seat">K17</button>
+    <button type="button" class="active seat">K18</button>
+    <button type="button" class="active seat">K19</button>
+    <button type="button" class="active seat">K20</button>
+    <br><br>
+    <div class="jumbotron">
+      <h1 align="center">SCREEN</h1>
+    </div>
+
+    <a href="kode-booking"><button disabled type="button" id="hihi" class="btn btn-primary button"
+        style="margin-left:470px">Lanjutkan
+        Pembayaran</button></a>
+  </div>
+
+</body>
+
+</html>

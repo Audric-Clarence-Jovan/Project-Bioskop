@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title> Apex Cinema </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <div id="layout">
+        <div id="header">
+            <img src="Movie_Ticket.jpg" width="700px" height="250px" class="header">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="Home"><b>Home</b></a></li>
+                <li><a href="NowPlaying"><b>Now Playing</b></a></li>
+                <li><a href="UpComing"><b>Up Coming</b></a></li>
+                <li><a href="Theater"><b>Theater</b></a></li>
+                <li><a href="ContactUs"><b>Contact Us</b></a></li>
+                <li><a href="logout"><b>Logout</b></a></li>
+            </ul>
+        </div>
+
+        <div id="runningtext">
+            <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();"
+                direction="left">
+                <b>Welcome</b>
+                <%= name %>
+            </marquee>
+        </div>
+
+        <br>
+        <br>
+        <div class="container">
+
+            <div class="jumbotron" style="background-color:crimson;">
+                <h1 class="text-white">Welcome To Apex Cinema</h1>
+                <p style="font-size: 18px" class="text-white">Selamat datang di Apex Cinema</p>
+                <p style="font-size: 18px" class="text-white">欢迎来到顶点电影院</p>
+                <p style="font-size: 18px" class="text-white">アペックスシネマへようこそ</p>
+            </div>
+            <br>
+            <br>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="promo1.1.jpg" alt="pr1" style="width: 1000px; height: 395px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="promo2.jpg" alt="pr2" style="width: 1000px; height: 395px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="promo3.jpg" alt="pr3" style="width: 1000px; height: 395px;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <img src="CovidProtocol.jpg" alt="covidprotocol" style="width: 480px; height: 270px;">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="footer"> @COPYRIGHT 2020. Apex Ticket ALL RIGHTS RESERVED.</div>
+        </div>
+</body>
+
+</html>
