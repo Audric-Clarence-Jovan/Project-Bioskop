@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI : 'mongodb://127.0.0.1:27017/db-apex-cinema'
+    MongoURI : 'mongodb+srv://apexcinema:xvew5SHpzYfhhO6Y@dbioskop.ncgdd.mongodb.net/db-apex-cinema?retryWrites=true&w=majority'
 }
